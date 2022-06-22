@@ -3,9 +3,9 @@ package com.bridglabz.junit;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
-    public static final String LAST_NAME_PATTERN = "^[A-Z][a-z]{2,}$";
-    public boolean isLastNameValid(String lastName){
-        Pattern pattern = Pattern.compile(LAST_NAME_PATTERN);
-        return pattern.matcher(lastName).matches();
+    public static final String EMAIL_PATTERN = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+    public boolean iEmailValid(String email){
+        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+        return pattern.matcher(email).matches();
     }
 }
