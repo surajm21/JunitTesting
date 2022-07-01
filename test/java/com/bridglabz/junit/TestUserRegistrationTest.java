@@ -8,7 +8,7 @@ public class TestUserRegistrationTest {
     @Test
     public void givenPassword_whenValid_thenReturnTrue() {
         UserRegistration user = new UserRegistration();
-        boolean result = user.isPasswordRuleOneValid("absolute");
+        boolean result = user.isPasswordRuleTwoValid("Absolute");
         System.out.println(result);
         Assert.assertTrue(result);
     }
